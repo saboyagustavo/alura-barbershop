@@ -1,11 +1,8 @@
-body {
-}
-
 #banner {
   width: 100%;
 }
 
-main {
+.main-content {
   background: #cccccc;
   padding: 30px;
 }
@@ -18,7 +15,7 @@ main {
   text-align: center;
 }
 
-p {
+.main-content p {
   text-align: center;
 }
 
@@ -26,13 +23,9 @@ p {
   font-size: 20px;
 }
 
-em,
+.main-content em,
 strong {
   color: #ff0000;
-}
-
-.benefit-item {
-  font-style: italic;
 }
 
 .benefits {
@@ -40,11 +33,15 @@ strong {
   padding: 20px;
 }
 
-ul {
+.benefits-list {
   display: inline-block;
   vertical-align: top;
   width: 20%;
   margin-right: 15%;
+}
+
+.benefit-item {
+  font-style: italic;
 }
 
 .benefits-image {
