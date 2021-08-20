@@ -1,3 +1,6 @@
+html {
+  font-family: 'Arvo', serif;
+}
 .header-container {
   background-color: #ccc;
   padding: 20px 0;
@@ -17,15 +20,20 @@
 
 .header-content li {
   display: inline;
-  margin-left: 15px;
+  margin-left: 5px;
 }
 
-.header-content li a {
+.header-content nav a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 20px;
   font-weight: bold;
+  padding: 10px;
   color: #000;
+}
+
+.header-content nav a:hover {
+  color: #c78c19;
 }
 
 .products {
@@ -44,12 +52,24 @@
   border: 2px solid black;
   border-radius: 10px;
   text-align: center;
+  box-shadow: 0 5px 10px 3px #ccc;
+}
+
+.products li:hover {
+  border-color: #b8860b;
+}
+.products li:active {
+  border-color: #556b2f;
 }
 
 .products h2 {
   margin-bottom: 10px;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
+}
+
+.products li:hover h2 {
+  font-size: 28px;
 }
 
 .products-description {
@@ -61,4 +81,19 @@
 .products-price {
   font-weight: bold;
   font-size: 22px;
+}
+
+footer {
+  background: url('/media/images/bg.jpg');
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer img {
+  height: 125px;
+}
+.copyright {
+  color: white;
+  font-size: 13px;
+  margin-top: 20px;
 }
