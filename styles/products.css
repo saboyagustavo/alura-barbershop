@@ -27,3 +27,38 @@
   font-weight: bold;
   color: #000;
 }
+
+.products {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.products li {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  padding: 30px 20px;
+  margin: 0 1.5%;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.products h2 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.products-description {
+  font-size: 18px;
+  line-height: 22px;
+  margin: 10px 0;
+}
+
+.products-price {
+  font-weight: bold;
+  font-size: 22px;
+}
