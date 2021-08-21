@@ -1,49 +1,58 @@
-#banner {
-  width: 100%;
+html {
+  font-family: 'Arvo', serif;
+  max-height: 100vh;
 }
 
-.main-content {
-  background: #cccccc;
-  padding: 30px;
+.header-container {
+  background-color: #ccc;
+  padding: 10px 0;
 }
 
-.main-title {
-  padding-left: 20px;
+.header-content {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
 }
 
-.centered-title {
-  text-align: center;
+.header-content img {
+  height: 150px;
 }
 
-.main-content p {
-  text-align: center;
+.header-content nav {
+  position: absolute;
+  top: 135px;
+  right: 0;
 }
 
-#hero {
+.header-content li {
+  display: inline;
+  margin-left: 5px;
+}
+
+.header-content nav a {
+  text-decoration: none;
+  text-transform: uppercase;
   font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  color: #000;
 }
 
-.main-content em,
-strong {
-  color: #ff0000;
+.header-content nav a:hover {
+  color: #c78c19;
 }
 
-.benefits {
-  background: #ffffff;
-  padding: 20px;
+footer {
+  background: url('/media/images/bg.jpg');
+  text-align: center;
+  padding: 10px 0;
 }
 
-.benefits-list {
-  display: inline-block;
-  vertical-align: top;
-  width: 20%;
-  margin-right: 15%;
+footer img {
+  height: 125px;
 }
-
-.benefit-item {
-  font-style: italic;
-}
-
-.benefits-image {
-  width: 50%;
+.copyright {
+  color: white;
+  font-size: 13px;
+  margin-top: 5px;
 }

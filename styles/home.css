@@ -1,0 +1,48 @@
+#banner {
+  width: 100%;
+}
+
+.main-content {
+  background: #cccccc;
+}
+
+.main-title {
+  padding-left: 20px;
+}
+
+.centered-title {
+  text-align: center;
+}
+
+.main-content p {
+  text-align: center;
+}
+
+#hero {
+  font-size: 20px;
+}
+
+.main-content em,
+strong {
+  color: #ff0000;
+}
+
+.benefits {
+  background: #ffffff;
+  padding: 20px;
+}
+
+.benefits-list {
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  margin-right: 15%;
+}
+
+.benefit-item {
+  font-style: italic;
+}
+
+.benefits-image {
+  width: 50%;
+}
