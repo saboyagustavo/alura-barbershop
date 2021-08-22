@@ -14,18 +14,17 @@
   text-align: center;
   box-shadow: 0 5px 10px 1px var(--gray-700);
   cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
 }
 
 .products li:hover {
   border-color: var(--yellow-800);
   box-shadow: 0 5px 10px 1px var(--yellow-800);
-  transition: border-color 0.15s, box-shadow 0.15s, font-size 1s;
 }
 
 .products li:active {
   border-color: var(--green-200);
   box-shadow: 0 5px 10px 1px var(--green-200);
-  transition: border-color 0.15s, box-shadow 0.15s;
 }
 
 .products h2 {

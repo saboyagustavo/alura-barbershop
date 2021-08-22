@@ -4,20 +4,20 @@ main {
 }
 
 form {
-  height: 100%;
-  text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-around;
-  gap: 30px;
+  height: 100%;
 }
 
 .input-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  width: 75%;
+
+  width: 50%;
   padding: 15px 10px;
   border: 2px solid black;
   border-radius: 10px;
@@ -25,26 +25,64 @@ form {
 }
 
 form label {
-  display: block;
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0 0 10px;
-  text-transform: capitalize;
-}
-
-form input {
-  padding: 10px 0;
-  width: 80%;
+  display: inline-block;
+  height: 23px;
   font-size: 20px;
+  font-weight: bold;
 }
 
 form input[type='text'],
 input[type='email'],
 input[type='tel'] {
-  text-align: center;
-  color: var(--gray-700);
+  width: 70%;
+  padding: 0;
   border: none;
   border-bottom: 2px dashed black;
+  font-size: 18px;
+  color: var(--gray-700);
+}
+
+input[type='submit'] {
+  cursor: pointer;
+  background-color: var(--white-100);
+
+  width: 52.5%;
+  height: 57px;
+  padding: 15px 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 1px var(--gray-700);
+
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--gray-800);
+
+  transition: border-color 0.15s, box-shadow 0.15s, background-color 0.15s,
+    font-size 0.15s, letter-spacing 0.15s;
+}
+
+input[type='submit']:hover {
+  background-color: white;
+  border-color: var(--yellow-800);
+  box-shadow: 0 5px 10px 1px var(--yellow-800);
+
+  font-size: 22px;
+  letter-spacing: 3px;
+  color: var(--yellow-800);
+}
+
+input[type='submit']:active {
+  background-color: white;
+  border-color: var(--green-200);
+  box-shadow: 0 5px 10px 1px var(--green-200);
+
+  font-size: 22px;
+  letter-spacing: 3px;
+  color: var(--green-200);
 }
 
 input:-webkit-autofill,

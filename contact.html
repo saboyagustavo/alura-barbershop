@@ -43,7 +43,19 @@
         <label for="phone">Phone</label>
         <input type="tel" name="phone" id="phone" required />
       </div>
-      <input type="submit" value="Send" />
+      <fieldset class="input-wrapper">
+        <label for="radio-email">Email</label>
+        <input type="radio" name="contact" value="email" id="radio-email">
+        <label for="">Phonecall</label>
+        <input type="radio" name="contact" value="Phonecall" id="radio-call">
+        <label for="">WhatsApp</label>
+        <input type="radio" name="contact" value="whatsapp" id="radio-whatsapp">
+      </fieldset>
+      <div class="input-wrapper">
+        <label for="news">Would you like to receive our news?</label>
+        <input type="checkbox" id="news">
+      </div>
+      <input type="submit" value="submit" />
     </form>
   </main>
   <footer>
