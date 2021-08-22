@@ -1,16 +1,13 @@
 main {
-  background-color: #ccc;
+  width: 100%;
   height: 598px;
   position: relative;
   text-align: center;
 }
 
 .main-image {
-  background-image: url('/media/images/banner.jpg');
+  background-image: url('/media/images/banner2.jpg');
   height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,6 +16,10 @@ main {
 .grayscale {
   height: 100%;
   filter: grayscale(100%);
+}
+
+.blur {
+  filter: blur(3.5px);
 }
 
 .main-content {

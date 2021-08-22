@@ -1,0 +1,59 @@
+main {
+  height: 498px;
+  padding: 50px 0;
+}
+
+form {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+  padding: 15px 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 1px var(--gray-700);
+}
+
+form label {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 10px;
+  text-transform: capitalize;
+}
+
+form input {
+  padding: 10px 0;
+  width: 80%;
+  font-size: 20px;
+}
+
+form input[type='text'],
+input[type='email'],
+input[type='tel'] {
+  text-align: center;
+  color: var(--gray-700);
+  border: none;
+  border-bottom: 2px dashed black;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: var(--yellow-800) !important;
+}

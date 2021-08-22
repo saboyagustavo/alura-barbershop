@@ -7,11 +7,22 @@
   --gray-800: #222;
 }
 
-html {
+html,
+input,
+button,
+textarea,
+select {
   font-family: 'Arvo', serif;
   font-weight: 400;
+}
+
+html {
   max-height: 100vh;
   background-color: #222;
+}
+
+body {
+  background-color: white;
 }
 
 .header-container {
@@ -67,6 +78,11 @@ html {
 
 .header-content nav a:active {
   color: var(--green-200);
+}
+
+main {
+  width: 940px;
+  margin: 0 auto;
 }
 
 footer {
