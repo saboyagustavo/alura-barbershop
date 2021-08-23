@@ -1,10 +1,10 @@
 :root {
-  --green-200: #3fae45;
-  --yellow-800: #ffa500;
   --white-100: #f3f3f3;
   --gray-200: #ccc;
   --gray-700: #333;
   --gray-800: #222;
+  --green-200: #3fae45;
+  --yellow-800: #ffa500;
 }
 
 html,
@@ -17,12 +17,12 @@ select {
 }
 
 html {
+  background-color: var(--gray-800);
   max-height: 100vh;
-  background-color: #222;
 }
 
 body {
-  background-color: white;
+  background-color: #fff;
 }
 
 .header-container {
@@ -52,28 +52,30 @@ body {
 
 .header-content ul {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 50px;
-  justify-content: center;
 }
 
 .header-content nav a {
   display: inline-block;
   width: 150px;
+
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 20px;
   line-height: 22px;
+  letter-spacing: 2px;
+  font-size: 20px;
   font-weight: bold;
   color: var(--white-100);
-  letter-spacing: 2px;
+
   transition: color 0.15s, font-size 0.15s, letter-spacing 0.15s;
 }
 
 .header-content nav a:hover {
-  color: var(--yellow-800);
   font-size: 22px;
   letter-spacing: 3px;
+  color: var(--yellow-800);
 }
 
 .header-content nav a:active {
@@ -87,9 +89,9 @@ main {
 
 footer {
   background-color: var(--gray-800);
-  text-align: center;
-  padding: 10px 0;
   height: 100%;
+  padding: 10px 0;
+  text-align: center;
 }
 
 footer img {

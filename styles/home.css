@@ -1,16 +1,16 @@
 main {
+  position: relative;
   width: 100%;
   height: 598px;
-  position: relative;
   text-align: center;
 }
 
 .main-image {
   background-image: url('/media/images/banner.jpg');
-  height: 100%;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
 }
 
 .grayscale {
@@ -23,40 +23,40 @@ main {
 }
 
 .main-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
   position: absolute;
   top: 5%;
   right: 5%;
   left: 5%;
-  height: 90%;
+
   width: 90%;
   max-width: 940px;
+  height: 90%;
+
   margin: 0 auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.6);
   border: 2px solid var(--gray-200);
   border-radius: 10px;
-
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-  justify-content: space-around;
   box-shadow: 0 0.5px 10px 1px var(--gray-200);
 }
 
 .centered-title {
-  color: white;
   margin: 20px 0 10px 0;
   text-align: center;
   font-size: 28px;
+  color: white;
 }
 
 .main-content p {
-  color: var(--white-100);
   margin: 10px 0;
   text-align: center;
   line-height: 28px;
   font-size: 20px;
+  color: var(--white-100);
 }
 
 #purpose {
