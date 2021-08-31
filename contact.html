@@ -31,18 +31,35 @@
   </header>
   <main>
     <form action="">
-      <div class="input-wrapper">
+      <fieldset class="input-wrapper">
         <label for="fullname">Full name</label>
-        <input type="text" name="fullname" id="fullname" required />
-      </div>
-      <div class="input-wrapper">
+        <input type="text" name="fullname" id="fullname" placeholder="enter here your full name" required />
+      </fieldset>
+      <fieldset class="input-wrapper">
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" required />
-      </div>
-      <div class="input-wrapper">
+        <input type="email" name="email" id="email" placeholder="your_email@example.com" required />
+      </fieldset>
+      <fieldset class="input-wrapper">
         <label for="phone">Phone</label>
-        <input type="tel" name="phone" id="phone" required />
-      </div>
+        <input type="tel" name="phone" id="phone" placeholder="enter here your phone number" required />
+      </fieldset>
+      <textarea placeholder="Write us a message here...">
+      </textarea>
+      <fieldset class="input-wrapper">
+        <label for="news">Would you like to receive our contact?</label>
+        <input type="checkbox" id="contact">
+      </fieldset>
+      <fieldset class="input-wrapper">
+        <legend>What time do you prefer to be attended?</legend>
+        <select name="booking-preferences" id="booking">
+          <option value="dawn">Dawn</option>
+          <option value="morning">Morning</option>
+          <option value="noon">Noon</option>
+          <option value="afternoon">Afternoon</option>
+          <option value="evening">Evening</option>
+          <option value="night">Night</option>
+        </select>
+      </fieldset>
       <fieldset class="input-wrapper">
         <label for="radio-email">Email</label>
         <input type="radio" name="contact" value="email" id="radio-email">
@@ -51,10 +68,6 @@
         <label for="">WhatsApp</label>
         <input type="radio" name="contact" value="whatsapp" id="radio-whatsapp">
       </fieldset>
-      <div class="input-wrapper">
-        <label for="news">Would you like to receive our news?</label>
-        <input type="checkbox" id="news">
-      </div>
       <input type="submit" value="submit" />
     </form>
   </main>
