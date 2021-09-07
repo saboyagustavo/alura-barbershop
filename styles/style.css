@@ -1,52 +1,55 @@
 body {
+  font-family: 'Montserrat', sans-serif;
 }
 
-#banner {
-  width: 100%;
+header {
+  background: #bbbbbb;
+  padding: 20px 0;
+}
+
+.container {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #c78c19;
+  text-decoration: underline;
 }
 
 main {
-  background: #cccccc;
-  padding: 30px;
+  width: 940px;
+  margin: 0 auto;
 }
 
-.main-title {
-  padding-left: 20px;
-}
-
-.centered-title {
+footer {
   text-align: center;
+  background: url('/media/images/bg.jpg');
+  padding: 40px 0;
 }
 
-p {
-  text-align: center;
-}
-
-#hero {
-  font-size: 20px;
-}
-
-em,
-strong {
-  color: #ff0000;
-}
-
-.benefit-item {
-  font-style: italic;
-}
-
-.benefits {
-  background: #ffffff;
-  padding: 20px;
-}
-
-ul {
-  display: inline-block;
-  vertical-align: top;
-  width: 20%;
-  margin-right: 15%;
-}
-
-.benefits-image {
-  width: 50%;
+.copyright {
+  color: #ffffff;
+  font-size: 13px;
+  margin: 20px 0 0;
 }
