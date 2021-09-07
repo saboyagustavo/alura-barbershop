@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/style-contact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Alura Barbershop</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1><img src="./media/images/logo.png"></h1>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <form action="POST">
+      <label for="fullname" class="input-description">Name and last name</label>
+      <input type="text" class="standard-input" name="fullname" id="fullname" required
+        placeholder="enter your full name here">
+
+      <label for="email" class="input-description">Your best email</label>
+      <input type="email" class="standard-input" name="email" id="email" required placeholder="youremail@example.com">
+
+      <label for="phone" class="input-description">Your phone number</label>
+      <input type="tel" class="standard-input" name="phone" id="phone" required placeholder="(xx)xxxxx-xxxx">
+
+      <label for="message" class="input-description">Leave us a message</label>
+      <textarea name="message" class="standard-input" id="message">
+      </textarea>
+
+      <fieldset>
+        <legend class="input-description">How would you like to receive our contact?</legend>
+        <label for="radio-email">Email
+          <input type="radio" name="contact" value="email" id="radio-email">
+        </label>
+
+        <label for="">Phonecall
+          <input type="radio" name="contact" value="Phonecall" id="radio-call">
+        </label>
+
+        <label for="">WhatsApp
+          <input type="radio" name="contact" value="whatsapp" id="radio-whatsapp">
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend class="input-description">What time do you prefer to be attended?</legend>
+        <select name="booking-preferences" class="booking-preferences">
+          <option value="dawn">Dawn</option>
+          <option value="morning">Morning</option>
+          <option value="noon">Noon</option>
+          <option value="afternoon">Afternoon</option>
+          <option value="evening">Evening</option>
+          <option value="night">Night</option>
+        </select>
+      </fieldset>
+      <label for="newsletter" class="checkbox input-description">
+        <input type="checkbox" name="newsletter" id="news">
+        Would you like to receive our news?
+      </label>
+      <input type="submit" value="Submit" class="submit">
+
+      <table>
+        <thead>
+          <th>
+            Dia
+          </th>
+          <th>
+            Horário
+          </th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Segunda</td>
+            <td>8h ~ 20h</td>
+          </tr>
+          <tr>
+            <td>Quarta</td>
+            <td>8h ~ 20h</td>
+          </tr>
+          <tr>
+            <td>Sexta</td>
+            <td>8h ~ 20h</td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </main>
+  <footer>
+    <img src="./media/images/logo-white.png"
+      alt="Illustration in white of a full long bearded man with moustache and a tuft, wearing thick framed glasses">
+    <p class="copyright">&copy; Copyright Alura Barbershop - 2019</p>
+  </footer>
+</body>
+
+</html>
