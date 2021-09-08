@@ -80,6 +80,11 @@ main {
   line-height: 1.5;
 }
 
+.benefit-item:before {
+  content: '★';
+  margin-right: 5px;
+}
+
 .benefit-item:first-child {
   font-weight: bold;
 }
