@@ -10,7 +10,10 @@ banner {
   text-align: center;
   font-size: 2em;
   margin: 0 0 1em;
-  clear: left;
+}
+
+.main {
+  margin-top: 50px;
 }
 
 .main p {
@@ -31,6 +34,12 @@ banner {
   margin: 0 20px 20px 0;
 }
 
+.centered-title {
+  text-align: center;
+  font-size: 1.75em;
+  margin: 1em 0;
+  clear: left;
+}
 .benefits-image {
   width: 60%;
 }
